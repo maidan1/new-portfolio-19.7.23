@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+.container1 {
+    display: flex;
+    background-color: #ccc;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container1 h4 {
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+}
+
+.container1 p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    width: 18rem;
+    // height: 400px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.card-img {
+
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h5 {
+    padding: 10px;
+    text-align: center;
+}
+
+.card p {
+    padding: 10px;
+    text-align: center;
+}
+
+.card a {
+    background-color: lightskyblue;
+    color: black;
+    padding: 1px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}

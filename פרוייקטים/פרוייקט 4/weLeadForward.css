@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-image: url("Path\ 15.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.container h1 {
+    color: #D3E10E;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 10%;
+}
+
+.container p {
+    color: #D3E10E;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 62px;
+    position: relative;
+    top: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Varela Round", sans-serif;
+    padding: 10px;
+
+}
+
+input {
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    padding: 20px 60px;
+}
+
+a {
+    background-color: darkblue;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    margin-right: 5%;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-size: cover;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    label {
+        margin-right: 10%;
+    }
+}

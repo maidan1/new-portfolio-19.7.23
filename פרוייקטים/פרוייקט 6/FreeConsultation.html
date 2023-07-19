@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .whatsapp {
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .title {
+            color: rgb(0, 0, 0);
+            font-size: 70px;
+            margin: 50px;
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+            top: 338px;
+            white-space: nowrap;
+        }
+
+        .title-text {
+            font-size: 16px;
+            text-align: right;
+            letter-spacing: 0px;
+            color: #020253;
+            opacity: 1;
+        }
+
+        .advice {
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 100px;
+            max-width: 300px;
+            position: relative;
+            top: -20px;
+            margin-left: 500px;
+        }
+
+        .content {
+            padding-top: 70px;
+            padding-bottom: 800px;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        body {
+            overflow-y: scroll;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            position: absolute;
+            top: 0;
+            right: 10%;
+            transform: translateX(40%);
+            width: 200px;
+            height: 20px;
+            background-color: #FDBD03;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            left: 0;
+            transform: translateX(20);
+            width: 100%;
+            height: 20px;
+            background-color: #FDBD03;
+        }
+
+        .form-container {
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 300px;
+            opacity: 1;
+            margin-top: -500px;
+        }
+
+        .form-input {
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .form-label {
+            position: absolute;
+            top: 95px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            opacity: 1;
+            text-align: right;
+        }
+
+        .form-input2 {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .form-label2 {
+            position: absolute;
+            top: 180px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            opacity: 1;
+            text-align: right;
+        }
+
+        .form-input3 {
+            position: absolute;
+            top: 280px;
+            left: 50px;
+            width: 300px;
+            height: 150px;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1.5;
+        }
+
+        .form-label3 {
+            position: absolute;
+            top: 250px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            opacity: 1;
+            text-align: right;
+        }
+
+        .form-submit {
+            position: absolute;
+            top: 420px;
+            left: 50px;
+            width: 300px;
+            height: 40px;
+            background: #FDBD03;
+            color: rgb(0, 0, 0);
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            .advice {
+                margin: 0 auto;
+                padding-top: 30px;
+                padding-bottom: 100px;
+                max-width: 300px;
+                position: relative;
+                top: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .form-container {
+                top: 0;
+                left: calc(50% + 20px);
+                /* Adjust the value as needed */
+                transform: translateX(-50%);
+                width: 400px;
+                height: 300px;
+                opacity: 1;
+                margin-top: 20px;
+            }
+
+            .form-label,
+            .form-input,
+            .form-label2,
+            .form-input2,
+            .form-label3,
+            .form-input3,
+            .form-submit {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                margin-left: auto;
+                margin-right: -40%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <img src="IconWhatsapp.png" alt="Icon" class="whatsapp">
+        <h1 class="title">ייעוץ חינם</h1>
+        <p class="title-text">.לקבלת ייעוץ חינם, <br>מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה</p>
+        <div class="advice">
+            <img src="advice2.png" alt="advice" style="max-width:360px; height: auto;">
+        </div>
+
+
+        <!-- Form -->
+        <div class="form-container">
+            <label class="form-label" for="name">:שם מלא</label>
+            <input class="form-input" type="text" id="name" name="name" autocomplete="off">
+
+            <label class="form-label2" for="email">:דוא"ל</label>
+            <input class="form-input2" type="email" id="email" name="email" autocomplete="off">
+
+            <label class="form-label3" for="message">:הכנס תוכן</label>
+            <textarea class="form-input3" id="message" name="message" autocomplete="off"></textarea>
+
+            <button class="form-submit" type="submit">שליחה</button>
+        </div>
+
+    </div>
+    <div class="top-bar"></div>
+    <div class="bottom-bar"></div>
+
+    <!-- Other content on the page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

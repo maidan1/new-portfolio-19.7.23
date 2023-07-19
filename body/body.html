@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: lightblue;
+            }
+
+            header {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 10%;
+                background-color: rgb(255, 255, 255);
+                position: fixed;
+                z-index: 1;
+            }
+
+            .logo {
+                width: 62px;
+                height: 62px;
+                border-radius: 31px;
+                opacity: 1;
+            }
+
+            header p1 {
+                padding: 10px;
+                height: 35px;
+                margin-right: auto;
+            }
+
+            .hamburger {
+                display: none;
+                margin-left: 0;
+            }
+
+            .nav__links {
+                width: 600px;
+                height: 37px;
+                margin: 0 auto;
+                padding-left: 90px;
+            }
+
+            .nav__links ul {
+                list-style-type: none;
+            }
+
+            .nav__links li {
+                display: inline-block;
+                padding: 0px 20px;
+
+            }
+
+            .nav__links li a {
+                display: block;
+                color: #000000;
+                text-decoration: none;
+                text-align: center;
+                width: auto;
+                font-size: 1.2rem;
+                line-height: 1.8;
+            }
+
+
+
+            .box1 {
+                background-image: url(../imag/coding.jpg);
+                width: auto;
+                height: 500px;
+                padding: 20px;
+                border: 1px solid #000;
+                padding-top: 50px;
+            }
+
+            .box1 h2 {
+                font-size: 50pt;
+                color: #000000;
+                font-family: 'Josefin Sans', sans-serif;
+                text-align: center;
+                line-height: 3;
+            }
+
+            p {
+                color: #000000;
+                font-size: 15pt;
+                text-align: center;
+                line-height: 1.35;
+                padding: 15px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .btn a {
+                font: normal bold 20px/30px Heebo;
+                letter-spacing: 0.3px;
+                color: #3A3A3A;
+                background: #1AE0EC;
+                border: none;
+                border-radius: 25px;
+                display: block;
+                padding: 10px 20px;
+                margin: 9px 20px;
+            }
+
+
+            .container {
+                width: auto;
+                height: 125px;
+                box-shadow: 0 0 4px #00000029;
+                font-size: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+            }
+
+            .gallery {
+                margin: 0 10px;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .projct {
+                width: 100vw;
+                height: 100vh;
+                padding: 10vh;
+                object-fit: contain;
+            }
+
+            footer {
+                width: auto;
+                height: 100px;
+                background: #1AE0EC;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon img {
+                margin-bottom: 10px;
+            }
+
+            .iconname {
+                text-align: center;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0px;
+                color: #2C2C2C;
+            }
+
+            .footer1 {
+                background-color: #000000;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .nav__links li a:hover {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                header {
+                    height: auto;
+                    padding: 20px;
+                }
+
+                .nav__links {
+                    width: 100%;
+                    padding-left: 0;
+                    position: absolute;
+                    top: 85px;
+                    left: 0;
+
+                }
+
+                .nav__links li {
+                    display: none;
+                    padding: 10px 0;
+                    text-align: center;
+                    background-color: silver;
+                }
+
+                .hamburger {
+                    color: #000000;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: 20px;
+
+                }
+
+                .hamburger:hover+.nav__links li {
+                    display: block;
+                }
+
+
+                .box1 {
+                    padding: 20px;
+                }
+
+                .btn button {
+                    width: 100%;
+                    margin: 9px 0;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <header>
+        <img class="logo" src="../imag/profile-image.jpg" alt="logo">
+        <p1>maidan gonen</p1>
+        <nav>
+            <div class="hamburger">&#9776;</div>
+            <ul class="nav__links">
+                <li><a href="#contant">CONTACT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#home">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="box1" id="home">
+        <h2>תיק עבודות</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam expedita numquam, debitis cumque officia
+            <br>voluptatem veniam velit hic impedit! Necessitatibus blanditiis eos quisquam repudiandae expedita
+            consequatur soluta quibusdam fugit praesentium!
+        </p>
+        <div class="btn">
+            <a href="../" class="btn1">לצפייה בפרויקט</a>
+            <a class="btn2" href="#">להורדת הפרויקט</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <img class="gallery" src="../imag/img-HTML.jpg" alt="html">
+        <img class="gallery" src="../imag/img-CSS.jpg" alt="css">
+        <img class="gallery" src="../imag/img-Bootstrap.jpg" alt="Bootstrap">
+        <img class="gallery" src="../imag/img-SASS.jpg" alt="sass">
+    </div>
+
+    <img class="projct" src="../imag/hereandNow.jpg" alt="snak">
+
+    <footer class="box4">
+        <div class="icon">
+            <img src="../imag/Icon location.png" alt="location">
+            <h7>Location</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon email.png" alt="email">
+            <h7>Email</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon whatsapp.png" alt="whatsapp">
+            <h7>WhatsApp</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon.png" alt="icon">
+            <h7>Icon</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon in.png" alt="in">
+            <h7>In</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/facebook.png" alt="facebook">
+            <h7>Facebook</h7>
+        </div>
+    </footer>
+    <footer1 id="contact" class="footer"
+        style="display: flex; justify-content: space-between; color: #000000; border: 2px solid #1AE0EC; padding: 10px;">
+        <p1 style="margin-right: auto;">כל הזכויות שמורות&copy;</p1>
+        <p1 style="margin-left: auto;">Maidan Gonen.</p1>
+    </footer1>
+    <section class="iconname"></section>
+
+
+</html>

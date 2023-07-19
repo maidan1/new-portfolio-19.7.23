@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandPagePhotos</title>
+    <link rel="stylesheet" href="./images/">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Varela+Round&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E5EEFF;
+            top: 0px;
+            left: 0px;
+            width: 1920px;
+        }
+
+        .container {
+            margin-top: 10%;
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+                'item1 item2 item3 item3 '
+                'item4 item5 item3 item3 '
+                'item6 item7 item8 item9'
+                'item10 item10 item11 item12'
+                'item10 item10 item13 item14'
+                'item10 item10 item15 item16'
+
+        }
+
+        .item1 {
+            grid-area: item1;
+
+        }
+
+        .item2 {
+            grid-area: item2;
+
+
+        }
+
+        .item3 {
+            width: 630px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #020253;
+            grid-area: item3;
+        }
+
+        h2 {
+            color: #0EE1DA;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        p {
+            color: whitesmoke;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+
+        }
+
+        .item5 {
+            grid-area: item5;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+        }
+
+        .item7 {
+            grid-area: item7;
+        }
+
+        .item8 {
+            grid-area: item8;
+        }
+
+        .item9 {
+            grid-area: item9;
+        }
+
+        .item10 {
+            background-color: #1d098e;
+            width: 613px;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            padding: 20px 20px 20px;
+            grid-area: item10;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .inputtext {
+            height: 50px;
+            width: 75%;
+            margin-left: auto;
+            font-family: 'Heebo', sans-serif;
+            border-bottom: 2px solid #0EE1DA;
+            margin-top: 10%;
+
+        }
+
+        button {
+            width: 100%;
+            margin-top: 200px;
+            margin-left: 135px;
+            background-color: #0EE1DA;
+            color: black;
+            font-family: 'Heebo', sans-serif;
+            padding: 10px 50px;
+
+        }
+
+        label {
+
+            text-align: right;
+            font-family: 'Heebo', sans-serif;
+            color: #0EE1DA;
+        }
+
+        /* End Of The Form */
+        .item11 {
+            grid-area: item11;
+        }
+
+        .item12 {
+            grid-area: item12;
+        }
+
+        .item13 {
+            grid-area: item13;
+        }
+
+        .item14 {
+            grid-area: item14;
+        }
+
+        .item15 {
+            grid-area: item15;
+        }
+
+        .item16 {
+            grid-area: item16;
+        }
+
+        button {
+            width: 25%;
+            margin-top: 50px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background-color: #0EE1DA;
+            color: black;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 1200px) {
+
+            .container {
+
+                grid-template-areas:
+                    'item1 item2'
+                    'item3 item3'
+                    'item3 item3'
+                    'item4 item5'
+                    'item6 item7'
+                    'item8 item9'
+                    'item10 item10'
+                    'item10 item10'
+                    'item11 item12'
+                    'item13 item14'
+                    'item15 item16'
+
+            }
+
+            .item2,
+            .item5,
+            .item7,
+            .item9,
+            .item12,
+            .item14,
+            .item16 {
+                margin-left: -440px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+
+            .item2,
+            .item5,
+            .item7,
+            .item9,
+            .item12,
+            .item14,
+            .item16 {
+                margin-left: -440px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"><img src="2Womens.png" alt=""></div>
+        <div class="item2"><img src="Trees.png" alt=""></div>
+        <div class="item3">
+            <h2>לגלות את העולם</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iste.</p>
+
+        </div>
+        <div class="item4"><img src="Rectangle 516.png" alt=""></div>
+        <div class="item5"><img src="Rectangle 506.png" alt=""></div>
+        <div class="item6"><img src="VIew.png" alt=""></div>
+        <div class="item7"><img src="Surfrs.png" alt=""></div>
+        <div class="item8"><img src="Sun.png" alt=""></div>
+        <div class="item9"><img src="Jungle.png" alt=""></div>
+        <div class="item10">
+
+            <h1>ספרו לנו על החוויה שלכם</h1>
+            <p>לורם איפסום או בקיצור ליפסום</p>
+            <form action="">
+                <label for="">שם מלא</label>
+                <input class="inputtext" type="text" name="" id="">
+                <label for="">דוא׳׳ל</label>
+                <input class="inputtext" type="text">
+                <label for="">החוויה שלכם</label>
+                <input class="inputtext" type="text">
+                <button>שליחה</button>
+            </form>
+
+
+        </div>
+        <div class="item11"><img src="Monkey.png" alt=""></div>
+        <div class="item12"><img src="EgptynMan.png" alt=""></div>
+        <div class="item13"><img src="Yarok.png" alt=""></div>
+        <div class="item14"><img src="Train.png" alt=""></div>
+        <div class="item15"><img src="Armon.png" alt=""></div>
+        <div class="item16"><img src="Sea.png" alt=""></div>
+    </div>
+</body>
+
+</html>

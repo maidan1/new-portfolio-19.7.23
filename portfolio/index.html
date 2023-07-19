@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../imag/maidan.jpeg" alt="logo">
+        <p1>maidan gonen</p1>
+
+        <nav>
+            <div class="hamburger">&#9776;</div>
+            <ul class="nav__links">
+                <li><a href="#CONTACT">צור קשר</a></li>
+                <li><a href="#projects">פרויקטים</a></li>
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#home">ראשי</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="box1" id="home">
+        <h2>תיק עבודות</h2>
+        <p>
+            שלום וברוכים הבאים לאתר שתיק העבודות שלי שבוא תוכלי ליראות את כול הפרוייקטים ואת היכולות שלי
+            <br>HTML,CSS,BootStrap ב
+        </p>
+    </section>
+
+    <div class="container">
+        <img class="gallery" src=../imag/img-HTML.jpg alt="html">
+        <img class="gallery" src=../imag/img-CSS.jpg alt="css">
+        <img class="gallery" src=../imag/img-Bootstrap.jpg alt="Bootstrap">
+        <img class="gallery" src=../imag/img-SASS.jpg alt="sass">
+
+    </div>
+    <div class="box2" id="about">
+        <img class="img" src="../imag/" alt="">
+        <h3>קצת אליי</h3>
+        <p>
+            .שלום,אני מידן גונן,אני איש מקצוע בתחום פיתוח ועיצוב אתרים<br>
+            .אני שואף ליצור אתרים מושכים ויזואלית וידידותים למשתמש<br>
+            .HTML,CSS,JavaScriptבדוק כמה מהפרוייקטים שלי בישביל ליראות את הכישורים שלי והנסיון ב
+        </p>
+        <button href="#">להורדת קורות חיים</button>
+    </div>
+
+    <section class="container1" id="projects">
+        <h4>עבודות נבחרות</h4>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+        <div class="card">
+            <img class="card-img" src="../imag/hereandNow.jpg" alt="HERE">
+            <h5>Here & New</h5>
+            <p>SCSS</p>
+            <a href="../project Page/projectPageHERE.html">דף פרוייקט</a>
+        </div>
+        <div class="card">
+            <img class="card-img" src="../imag/cofee.jpg" alt="">
+            <h5>קפה טוב לבוקר טוב</h5>
+            <p>
+                HTML
+            </p>
+            <a href="../project Page/projectPagCofee.html">דף פרוייקט</a>
+        </div>
+        <div class="card">
+            <img class="card-img" src="../imag/MoveFoword.jpg" alt="">
+            <h5>ייעוץ חינם</h5>
+            <p>HTML</p>
+            <a href="../project Page/projectPagMoveForward.html">דף פרוייקט</a>
+        </div>
+    </section>
+    <section class=container1>
+        <div class="card">
+            <img class="card-img" src="../imag/consultation.jpg" alt="">
+            <h5>ייעוץ חינם</h5>
+            <p>BootStrap</p>
+            <a href="../project Page/projectPagConsultation.html">דף פרוייקט</a>
+        </div>
+        <div class="card">
+            <img class="card-img" src="../imag/We.jpg" alt="">
+            <h5>תן לנו להוביל אותך קדימה</h5>
+            <p>CSS</p>
+            <a href="../project Page/projectPageWeLeadForwaeld.html">דף פרוייקט</a>
+        </div>
+        <div class="card">
+            <img class="card-img" src="../imag/gelley.jpg" alt="">
+            <h5>לגלות את העולם</h5>
+            <p>HTML</p>
+            <a href="../project Page/projectPagphoto.html">דף פרוייקט</a>
+        </div>
+    </section>
+
+    <div class="box3" id="CONTACT">
+        <img class="rect" src="../imag/Rectangle 41.png" alt="rect">
+        <form name="form" method="post">
+
+
+            <h6 style="color: silver;">צור קשר</h6>
+            <p style="color: silver;">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+                מקום”
+                בעת עריכ
+            </p>
+
+
+            <label for="name" style="color: silver;">:שם מלא</label>
+            <input type="text" id="Name"><br>
+            <label for="email" style="color: silver;">:דוא״ל</label>
+            <input type="text" id="Email"><br>
+            <label for="phone" style="color: silver;">:טלפון</label>
+            <input type="text" id="Phone"><br>
+            <label for="message" style="color: silver;">:הודעה</label>
+            <textarea name="Text" id="Text" maxlength="100"></textarea><br>
+            <button ctype="submit" name="submit"
+                style="background-color: #1AE0EC;padding: 10px 100px;letter-spacing: 0.3px;font: normal bold 20px/30px Heebo; ">שׁליחה</button><br>
+        </form>
+    </div>
+
+    <footer class="box4">
+        <div class="icon">
+            <img src="../imag/Icon location.png" alt="location">
+            <h7>Location</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon email.png" alt="email">
+            <h7>Email</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon whatsapp.png" alt="whatsapp">
+            <h7>WhatsApp</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon.png" alt="icon">
+            <h7>Icon</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/Icon in.png" alt="in">
+            <h7>In</h7>
+        </div>
+        <div class="icon">
+            <img src="../imag/facebook.png" alt="facebook">
+            <h7>Facebook</h7>
+        </div>
+    </footer>
+    <section class="iconname"></section>
+    <footer1 id="contact" class="footer"
+        style="display: flex; justify-content: space-between; color: #1AE0EC; border: 2px solid #1AE0EC; padding: 10px;">
+        <p1 style="margin-right: auto;">כל הזכויות שמורות&copy;</p1>
+        <p1 style="margin-left: auto;">Maidan Gonen.</p1>
+    </footer1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
